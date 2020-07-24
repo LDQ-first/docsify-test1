@@ -1,0 +1,22 @@
+{
+  "name": "docsify-test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gitadd": "git add . && git commit -m \"update\" ",
+    "git": "npm run gitadd && git push origin master",
+    "dev": "docsify serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LDQ-first/docsify-test1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LDQ-first/docsify-test1/issues"
+  },
+  "homepage": "https://github.com/LDQ-first/docsify-test1#readme"
+}
