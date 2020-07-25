@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -23,6 +23,9 @@
     <a href="#/custom-navbar">自定义导航</a>
   </nav> -->
   <div id="app">加载中</div>
+  
+  
+  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
   <script>
     window.$docsify = {
       name: 'docsify',
@@ -39,10 +42,37 @@
       mergeNavbar: true, //小屏设备下合并导航栏到侧边栏。
       formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
       search: 'auto', 
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      count:{
+        countable:true,
+        fontsize:'1.2em',
+        color:'#249dc5',
+        language:'chinese'
+      },
+      plugins: [
+        EditOnGithubPlugin.create(
+          'https://github.com/LDQ-first/docsify-test1/', 
+          null, 
+          function(file) {
+            if (file.indexOf('en') === -1) {
+              return '编辑'
+            } else {
+              return 'Edit on git'
+            }
+          })
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
 </html>
