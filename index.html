@@ -9,20 +9,26 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
 <body>
-  <nav>
+  <!-- <nav>
     <a href="#/">首页</a>
     <a href="#/custom-navbar">自定义导航</a>
-  </nav>
+  </nav> -->
   <div id="app">加载中</div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: '',
+      name: 'docsify',
+      repo: 'https://github.com/LDQ-first/docsify-test1',
       loadSidebar: true,
       subMaxLevel: 2,
-      loadNavbar: true
+      loadNavbar: true,
+      coverpage: true,
+      auto2top: true,    //切换页面后是否自动跳转到页面顶部。
+      homepage: 'home.md',
+      logo: '/img/icon.svg',
+      themeColor: '#249dc5'
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 </body>
 </html>
