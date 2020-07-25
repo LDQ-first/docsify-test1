@@ -211,6 +211,22 @@ window.$docsify = {
 
 这个插件用来在 Markdown 中显示选项卡。
 
+<!-- tabs:start -->
+
+#### ** English **
+
+Hello!
+
+#### ** French **
+
+Bonjour!
+
+#### ** Italian **
+
+Ciao!
+
+<!-- tabs:end -->
+
 - [文档和示例](https://jhildenbiddle.github.io/docsify-tabs)
 
 开发：[@jhildenbiddle](https://github.com/jhildenbiddle/docsify-tabs).
