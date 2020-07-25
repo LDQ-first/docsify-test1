@@ -9,11 +9,18 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
+  <nav>
+    <a href="#/">首页</a>
+    <a href="#/custom-navbar">自定义导航</a>
+  </nav>
+  <div id="app">加载中</div>
   <script>
     window.$docsify = {
       name: '',
-      repo: ''
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      loadNavbar: true
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
