@@ -7,3 +7,4 @@
 * 定制化
     * [配置项](/configuration.md)
     * [插件](plugins)
+    * [自定义插件](/write-a-plugin.md)
