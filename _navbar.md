@@ -9,3 +9,4 @@
     * [插件](plugins)
     * [自定义插件](/write-a-plugin.md)
     * [配置markdown](/markdown.md)
+    * [语法高亮](/language-highlight.md)
