@@ -12,17 +12,29 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dolphin.css"> -->
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" title="vue">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" title="vue">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css" title="dark" disabled>
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css" title="buble" disabled>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/pure.css" title="pure" disabled>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/dolphin.css" title="dolphin" disabled>
-  <style>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/dolphin.css" title="dolphin" disabled> -->
+  <!-- <link 
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
+    title="docsify-darklight-theme"
+    type="text/css"
+  /> -->
+  <link 
+      rel="stylesheet"
+      href="documentation/style.css"
+      title="docsify-darklight-theme"
+      type="text/css"
+  />
+  <!-- <style>
     :root {
       --docsifytabs-border-color: hsl(24, 74%, 64%);
       --docsifytabs-tab-highlight-color: #249dc5;
     }
-  </style>
+  </style> -->
 <body>
   <!-- <nav>
     <a href="#/">首页</a>
@@ -127,10 +139,50 @@
         theme      : 'classic', // default
         tabComments: true,      // default
         tabHeadings: true       // default
+      },
+      darklightTheme: {
+          siteFont : "PT Sans",
+          defaultTheme : 'dark',
+          codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
+          bodyFontSize : '17px',
+          dark: {
+              accent: '#249dc5',
+              toogleBackground : '#ffffff',
+              background: '#091a28',
+              textColor: '#505d6b',
+              codeTextColor : '#ffffff',
+              codeBackgroudColor : '#0e2233',
+              borderColor : '#0d2538',
+              blockQuoteColour : '#858585',
+              highlightColor : '#d22778',
+              sidebarSublink : '#505d6b',
+              codeTypeColor : '#ffffff',
+              coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+              toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
+          },
+          light: {
+              accent: '#249dc5',
+              toogleBackground : '#091a28',
+              background: '#ffffff',
+              textColor: '#34495e',
+              codeTextColor : '#525252',
+              codeBackgroudColor : '#f8f8f8',
+              borderColor : 'rgba(0, 0, 0, 0.07)',
+              blockQuoteColor : '#858585',
+              highlightColor : '#d22778',
+              sidebarSublink : '#505d6b',
+              codeTypeColor : '#091a28',
+              coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+              toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
+          }
       }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script 
+    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
+    type="text/javascript">
+  </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script>

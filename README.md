@@ -44,6 +44,12 @@ docsify serve
 ```
 
 
+## 使用主题
+
+使用主题 [docsify-darklight-theme](https://github.com/boopathikumar018/docsify-darklight-theme)
+[文档](https://docsify-darklight-theme.boopathikumar.me/#/installation)
+
+
 更多命令行工具用法，参考 [docsify-cli 文档]([docsify-cli 文档](https://github.com/docsifyjs/docsify-cli))。
 
 
